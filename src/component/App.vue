@@ -7,12 +7,13 @@
         <app-regieter></app-regieter>
 
         <footer></footer>
+        测试, 看看根组件能否成
     </div>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 
