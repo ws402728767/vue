@@ -1,6 +1,9 @@
 // 导入vue相关的第三方包
 import Vue from "vue";
 import VueRouter from "vue-router";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import "normalize.css";
 
 // 将axios导入vue原型中
 import axios from "axios";
@@ -14,6 +17,9 @@ Vue.prototype.$api = api;
 
 // vue实例使用路由
 Vue.use(VueRouter);
+
+// vue使用elementUI
+Vue.use(ElementUI);
 
 // 导入根组件
 import App from "./component/App.vue";
