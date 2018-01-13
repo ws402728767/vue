@@ -5,11 +5,14 @@ import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import "normalize.css";
 
+// 全局样式
+import "./less/index.less";
+
 // 将axios导入vue原型中
 import axios from "axios";
 import api from "./js/api.js";
-import { domain } from "./js/api.js";
-axios.defaults.baseURL = domain;
+
+axios.defaults.baseURL = "http://127.0.0.1:8899";
 Vue.prototype.$http = axios;
 
 // 将api配置对象导入Vue原型中
