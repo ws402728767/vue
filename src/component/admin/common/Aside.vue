@@ -75,4 +75,7 @@
     .asidenav a{
         color:steelblue;
     }
+    .el-menu{
+        border: none;
+    }
 </style>

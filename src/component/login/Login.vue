@@ -41,9 +41,9 @@
                     .then(res => {
                         if (res.data.status === 0) {
                             this.$alert('登录成功，正在跳转');
-                            console.log(this);
-                            this.$router.push({name:'admin'});
-                        }else {
+                            let nextPage = this.$route.query.nextPage
+                            this.$router.push({ path: nextPage ? nextPage : '/admin' });
+                        } else {
                             this.$alert(res.data.message);
                         }
                     })
